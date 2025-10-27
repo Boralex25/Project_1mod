@@ -1,0 +1,416 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background-color: #D9D9D9;
+}
+
+.circle1 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+}
+
+.aver-rec1 {
+    position: absolute;
+    width: 534px;
+    height: 260px;
+    background-color: #2036FD;
+}
+
+.big-black-rec1 {
+    position: absolute;
+    width: 429px;
+    height: 260px;
+    background-color: #1E1E1E;
+    top: 22px;
+    left: 831px;
+    z-index: 0;
+}
+
+.small-rec1 {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    background-color: #2036FD;
+}
+
+.small-black-rec1 {
+    position: absolute;
+    width: 180px;
+    height: 133px;
+    background-color: #1E1E1E;
+    top: 22px;
+    right: 38px;
+    z-index: 0;
+}
+
+.big-rec1 {
+    position: absolute;
+    width: 688px;
+    height: 260px;
+    background-color: #2036FD;
+}
+.title {
+    font-family: 'Geometria';
+    font-size: 320px;
+    font-weight: 600;
+    color: #1E1E1E;
+    text-align: center;
+    letter-spacing: -22.4px;
+    position: absolute;
+}
+
+.subtitle {
+    font-family: 'Geometria';
+    font-size: 48px;
+    font-weight: 600;
+    color: #D9D9D9;
+    text-align: center;
+    letter-spacing: -3.36px;
+    position: absolute;
+}
+
+.about-font {
+    font-family: 'Geometria';
+    font-weight: 600;
+    color: #1E1E1E;
+    text-align: center;
+    letter-spacing: -22.4px;
+    position: absolute;   
+}
+
+.rec2-blue {
+    position: absolute;
+    width: 689px;
+    height: 260px;
+    background-color: #2036FD;
+}
+
+.rec2-black {
+    position: absolute;
+    width: 260px;
+    height: 689px;
+    background-color: #1E1E1E;
+}
+
+.square2 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+}
+
+.block-letters {
+    width: 1920px;
+    height: 1080px;
+    background-color: #D9D9D9;
+    display: flex;       
+    text-align: center; 
+    flex-wrap: wrap; 
+    align-content: flex-start;
+    gap: 0;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 62px;
+}
+
+.letter-square {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    min-height: 200px;
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EEE91B;
+    font-size: 150px;
+    transition: all 0.5s ease;
+    font-family: 'Geometria', sans-serif;
+    font-weight: 500;
+    z-index: 3;
+    border: #D9D9D9 3px solid;
+}
+
+
+
+.letter-square:hover {
+  background-color: transparent;
+  color: #2036FD;
+  border: 3px solid transparent;
+}
+
+
+
+.letter-square:hover::after {
+  content: attr(data-after-content);
+  color: #2036FD;
+  text-align: center;
+}
+
+.letter-circle {
+    width: 200px;
+    height: 200px;
+    background-color: #C83524;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;  
+    align-items: center;
+    color: #1E1E1E;
+    font-size: 150px;
+    transition: all 0.5s ease;
+    font-family: 'Geometria', sans-serif;
+    font-weight: 500;
+    z-index: 3;
+    border: #D9D9D9 3px solid;
+}
+
+.letter-circle:hover {
+  background-color: transparent;
+  color: #2036FD;
+  border: 3px solid transparent;
+}
+
+.letter-circle:hover::after {
+  content: attr(data-after-content);
+  color: #2036FD;
+  text-align: center;
+}
+
+
+
+
+:root {
+  --marquee-height: 268px;
+  --marquee-speed: 8s;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: transparent;
+  border: 0px solid transparent;
+  z-index: 3;
+  
+}
+
+.marquee__track-left {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee-scroll-left linear infinite;
+  animation-duration: var(--marquee-speed);
+  transform: translate3d(0,0,0);
+}
+
+.marquee__track-right {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee-scroll-right linear infinite;
+  animation-duration: var(--marquee-speed);
+  transform: translate3d(0,0,0);
+}
+
+.marquee__item{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;              
+  height: var(--marquee-height);
+  font-family: 'Geometria', sans-serif;
+  font-size: 128px;
+  box-sizing: border-box;
+  flex-shrink: 0;                
+  padding-left: 62px;
+}
+
+.marquee__item  { background: #1E1E1E; color: #D9D9D9; }
+
+.marquee:hover .marquee__track-left {
+  animation-play-state: paused;
+}
+
+.marquee:hover .marquee__track-right {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-scroll-right {
+  0% { transform: translateX(-50%); } 
+  100% { transform: translateX(0); }
+}
+
+
+.square3 {
+    position: absolute;
+    width: 268px;
+    height: 268px;
+    top: 428px;
+    background-color: #EEE91B;
+}
+
+.black-rec3 {
+    position: absolute;
+    width: 129px;
+    height: 87px;
+    top: 518px;
+    left: 139px;
+    background-color: #1E1E1E;
+}
+
+.circle3 {
+    position: absolute;
+    width: 268px;
+    height: 268px;
+    background-color: #C83524;
+    border-radius: 50%;
+    top: 428px;
+    left: 1006px;
+    z-index: 1;
+}
+
+.rec3 {
+    position: absolute;
+    width: 781px;
+    height: 268px;
+    top: 428px;
+    left: 1139px;
+    background-color: #2036FD;
+}
+
+.about-languages {
+    font-family: 'Geometria';
+    font-weight: 500;
+    color: #D9D9D9;
+    text-align: center;
+    letter-spacing: 0;
+    position: absolute; 
+}
+
+.big-letter {
+    position: absolute;
+    font-family: 'Geometria';
+    font-weight: 300;
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 700px;
+    line-height: 0;
+}
+
+.circle-letter {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.about-letters {
+    font-family: 'Geometria';
+    font-weight: 600;
+    color: #1E1E1E;
+    text-align: left;
+    letter-spacing: 0;
+    position: absolute;  
+    font-size: 48px;
+}
+
+.choc {
+    position: absolute;
+    font-family: 'Geometria';
+    font-weight: 600;
+    font-size: 130px;
+    color: #1E1E1E;
+    letter-spacing: -7.8px;
+}
+
+.cacao {
+    position: absolute;
+    top: 543px;
+    left: 1497;
+    font-family: 'Geometria';
+    font-weight: 650;
+    font-size: 24px;
+    color: #D9D9D9;
+    letter-spacing: -1.44px;
+}
+
+.why-font {
+    position: absolute;
+    font-family: 'Geometria';
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+.poster {
+    position: absolute;
+    font-family: 'Geometria';
+    font-weight: 600;
+    font-size: 115px;
+    color: #1E1E1E;
+    letter-spacing: -6.9px;
+}
+
+.footer {
+    position: relative;
+    width: 1920px;
+    height: 298px;
+    background-color: #2036FD;
+}
+
+.footer-slogan {
+    position: absolute;
+    top: 24px;
+    left: 81px;
+    width: 1151px;
+    font-family: 'Geometria';
+    font-weight: 800;
+    font-size: 64px;
+    color: #fff;
+}
+
+.footer-circ {
+    position: absolute;
+    top: 27px;
+    left: 1443px;
+    border-radius: 50%;
+    background-color: #C83524;
+    width: 125px;
+    height: 125px;
+    z-index: 1;
+}
+
+.footer-rec {
+    position: absolute;
+    top: 27px;
+    left: 1505px;
+    background-color: #1E1E1E;
+    width: 400px;
+    height: 125px;
+}
+
+.footer-name {
+    position: absolute;
+    top: 181px;
+    left: 1446px;
+    font-family: 'Geometria';
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: -4px;
+}

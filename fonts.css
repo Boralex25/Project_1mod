@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-Thin.ttf'); 
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-ThinItalic.ttf'); 
+    font-weight: 150;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-ExtraLight.ttf'); 
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-ExtraLightItalic.ttf'); 
+    font-weight: 250;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-Light.ttf'); 
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-LightItalic.ttf'); 
+    font-weight: 350;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-Regular.ttf'); 
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-RegularItalic.ttf'); 
+    font-weight: 450;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-Medium.ttf'); 
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-MediumItalic.ttf'); 
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-Bold.ttf'); 
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-BoldItalic.ttf'); 
+    font-weight: 650;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-ExtraBold.ttf'); 
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-ExtraBoldItalic.ttf'); 
+    font-weight: 750;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-Heavy.ttf'); 
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fontsGeometria/Geometria-HeavyItalic.ttf'); 
+    font-weight: 850;
+}
