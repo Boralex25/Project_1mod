@@ -227,7 +227,6 @@ body {
   white-space: nowrap;
   animation: marquee-scroll-left linear infinite;
   animation-duration: var(--marquee-speed);
-  transform: translate3d(0,0,0);
 }
 
 .marquee__track-right {
@@ -236,7 +235,6 @@ body {
   white-space: nowrap;
   animation: marquee-scroll-right linear infinite;
   animation-duration: var(--marquee-speed);
-  transform: translate3d(0,0,0);
 }
 
 .marquee__item{
@@ -264,11 +262,11 @@ body {
 
 @keyframes marquee-scroll-left {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-100%); }
 }
 
 @keyframes marquee-scroll-right {
-  0% { transform: translateX(-50%); } 
+  0% { transform: translateX(-100%); } 
   100% { transform: translateX(0); }
 }
 
